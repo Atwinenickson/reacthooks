@@ -3,22 +3,32 @@ import React, { useReducer, createContext } from "react";
 export const ContactContext = createContext();
 
 const initialState = {
-  contacts: [
+    contacts: [
+        {
+            id: "097",
+            name: "Albert Hpal",
+            email: "hpal@gmail.com",
+        },
     {
       id: "098",
       name: "Diana Prince",
-      email: "diana@us.army.mil",
+      email: "diana@gmail.com",
     },
     {
       id: "099",
       name: "Bruce Wayne",
-      email: "bruce@batmail.com",
+      email: "bruce@hotmail.com",
     },
     {
       id: "100",
       name: "Clark Kent",
-      email: "clark@metropolitan.com",
-    },
+      email: "clark@yahoo.com",
+        },
+        {
+            id: "101",
+            name: "Kisa Kyamukama",
+            email: "kisa@gmail.com",
+        },
   ],
   loading: false,
   error: null,
